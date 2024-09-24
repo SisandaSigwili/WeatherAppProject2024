@@ -1,0 +1,124 @@
+body {
+  background: #f9f7fe;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: #885df1;
+}
+
+.weather-app {
+  background: url("https://images.pexels.com/photos/907485/pexels-photo-907485.jpeg?auto=compress&cs=tinysrgb&w=600")
+    no-repeat center center;
+  background-size: cover;
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  position: relative;
+}
+
+.search-input {
+  background-color: #f9f7fe;
+  border: none;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  padding: 20px;
+  width: 75%;
+  border-radius: 6px;
+}
+
+.search-button {
+  margin-left: 5px;
+  font-size: 16px;
+  background-color: #885df1;
+  color: white;
+  border: none;
+  padding: 20px;
+  line-height: 1;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #7239c8;
+  cursor: pointer;
+}
+
+main {
+  padding: 30px 0;
+}
+
+.current-weather {
+  display: flex;
+  justify-content: space-between;
+}
+
+.current-city {
+  font-size: 38px;
+  font-weight: 900;
+  margin: 0;
+}
+
+.current-details {
+  color: #808080;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.current-details strong {
+  color: #f65282;
+}
+
+.current-temperature {
+  font-size: 48px;
+  display: flex;
+  align-items: baseline;
+}
+
+.current-temperature-value {
+  font-size: 80px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.current-temperature-unit {
+  font-size: 28px;
+  margin-left: -5px;
+  position: relative;
+  top: -15px;
+}
+
+.current-temperature-icon {
+  position: relative;
+  top: -8px;
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+footer {
+  border-top: 1px solid #838285;
+  text-align: center;
+  padding-top: 15px;
+  color: rgba(14, 3, 59, 0.4);
+}
+
+@media (max-width: 600px) {
+  .current-city {
+    font-size: 30px;
+  }
+
+  .current-temperature {
+    font-size: 36px;
+  }
+
+  .current-details {
+    font-size: 14px;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+}
